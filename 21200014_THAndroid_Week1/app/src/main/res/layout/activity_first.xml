@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="THÔNG TIN SINH VIÊN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Họ và tên"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idTitle"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Nhập thông tin"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:inputType="textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="@id/nameTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nameTitle"
+        app:layout_constraintTop_toTopOf="@id/nameTitle"
+        />
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="MSSV"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/classTitle"
+        app:layout_constraintEnd_toStartOf="@+id/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
+
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:hint="Nhập mssv"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="@id/idTitle"
+        app:layout_constraintBottom_toBottomOf="@id/idTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/idTitle"
+       />
+
+    <TextView
+        android:id="@+id/classTitle"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Lớp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phoneTitle"
+        app:layout_constraintEnd_toStartOf="@id/studentClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idTitle" />
+
+    <EditText
+        android:id="@+id/studentClass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Nhập mã lớp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/classTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/classTitle"
+        app:layout_constraintTop_toTopOf="@id/classTitle" />
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="SĐT"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/heading2"
+        app:layout_constraintEnd_toStartOf="@id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/classTitle" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Nhập số điện thoại"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/phoneTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/phoneTitle"
+        app:layout_constraintTop_toTopOf="@id/phoneTitle" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="SINH VIÊN NĂM"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gradeRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTitle"
+        />
+
+    <RadioGroup
+        android:id="@+id/gradeRadioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/heading3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading2">
+
+        <RadioButton
+            android:id="@+id/grade1Option"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:contentDescription="1"
+            android:text="Năm 1"
+            />
+
+        <RadioButton
+            android:id="@+id/grade2Option"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:contentDescription="2"
+            android:text="Năm 2"/>
+
+        <RadioButton
+            android:id="@+id/grade3Option"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:contentDescription="3"
+            android:text="Năm 3" />
+
+        <RadioButton
+            android:id="@+id/grade4Option"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:contentDescription="4"
+            android:text="Năm 4"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/heading3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="CHUYÊN NGÀNH"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/majorRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradeRadioGroup" />
+
+
+    <RadioGroup
+        android:id="@+id/majorRadioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/developmentPlanTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading3">
+
+        <RadioButton
+            android:id="@+id/htnOption"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:contentDescription="Máy tính và Hệ thống nhúng"
+            android:gravity="center"
+            android:text="MT - HTN" />
+
+        <RadioButton
+            android:id="@+id/vtOption"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:contentDescription="Viễn Thông"
+            android:gravity="center"
+            android:text="Viễn Thông" />
+
+        <RadioButton
+            android:id="@+id/dtOption"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:contentDescription="Điện tử"
+            android:gravity="center"
+            android:text="Điện Tử" />
+
+    </RadioGroup>
+
+
+    <ImageButton
+        android:id="@+id/avatar"
+        android:layout_width="89dp"
+        android:layout_height="42dp"
+        android:contentDescription="Take a photo"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="189dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="GỬI THÔNG TIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/developmentPlanTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:text="KẾ HOẠCH PHÁT TRIỂN BẢN THÂN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/developmentPlan"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top|start"
+        android:hint="Nhập kế hoạch của bạn"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/developmentPlanTitle"
+        app:layout_constraintVertical_bias="0.056" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
